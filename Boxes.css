@@ -1,0 +1,36 @@
+div {
+   background-color: rgb(6, 212, 40);
+   display: inline-block;
+   color: white;
+   line-height: 100px;
+   font-size: 50px;
+   text-align: center; /* Center the text within the divs*/
+}
+
+.grandparent {
+    width: 100%;
+    background-color: royalblue;
+    display: flex;
+    flex-direction: row;
+    height: 30vh;
+    justify-content: space-evenly;
+}
+.parent {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40%;
+    flex-direction: column;
+}
+.child {
+    background-color: white;
+    height: 25%;
+    width: 90%;
+}
+
+.parent:last-child {
+    flex-direction: row;
+}
+
+body {
+    margin: 0;
+}
